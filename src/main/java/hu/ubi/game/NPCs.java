@@ -1,8 +1,5 @@
 package hu.ubi.game;
 
-/**
- * Created by Urbán on 2016.12.21..
- */
 public class NPCs {
     private String name;
     private int HP, AP, x, y;

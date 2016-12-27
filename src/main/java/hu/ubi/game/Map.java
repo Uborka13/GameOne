@@ -1,8 +1,5 @@
 package hu.ubi.game;
 
-/**
- * Created by Urbán on 2016.12.21..
- */
 public class Map {
     private int difficulty, width, length;
 

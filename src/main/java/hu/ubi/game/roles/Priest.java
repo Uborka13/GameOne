@@ -1,12 +1,11 @@
-package hu.ubi.game.races;
+package hu.ubi.game.roles;
 
 import hu.ubi.game.player.Player;
 
-class Elf implements IRaces {
+class Priest implements IRoles{
     private int HP;
     private int AP;
     private int MP;
-    private int luck;
 
     // ------------------------- GETTER ------------------------- //
 
@@ -20,10 +19,6 @@ class Elf implements IRaces {
 
     public int getMP() {
         return MP;
-    }
-
-    public int getLuck() {
-        return luck;
     }
 
     // ------------------------- SETTER ------------------------- //
@@ -40,16 +35,11 @@ class Elf implements IRaces {
         this.MP = MP;
     }
 
-    public void setLuck(int luck) {
-        this.luck = luck;
-    }
-
     // ------------------------- SETUP ------------------------- //
 
     public void setup(Player player) {
         player.setHP(player.getHP() + getHP());
         player.setAP(player.getAP() + getAP());
         player.setMP(player.getMP() + getMP());
-        player.setLuck(player.getLuck() + getLuck());
     }
 }

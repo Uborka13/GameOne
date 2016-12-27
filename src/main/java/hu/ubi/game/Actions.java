@@ -1,8 +1,7 @@
 package hu.ubi.game;
 
-/**
- * Created by Urbán on 2016.12.21..
- */
+import hu.ubi.game.player.Player;
+
 public class Actions {
     private Player player;
 
